@@ -1,0 +1,18 @@
+ <header>
+    <!-- Properties and Interpolation -->
+    <!-- Your titlte doesn't have to be a property in your class -->
+    <h1>{{ title.toUpperCase() }}</h1>
+    <!-- Embed the button into the header -->
+    <!-- I want to be able to pass in color and text for the button bc
+    if we want to reuse this, we are not going to want the same text or
+    the same color -->
+    <!-- It's like passing in props in React -->
+    <!-- Add in whatever event we're emitting, essentially we're just
+        firing off a custom event instead of click, it's btnClick-->
+        <!-- and then set it to be whatever we want to happen -->
+        <!-- Depending on the button and the functionality you want it 
+        to do, you can change the function when the button is clicked -->
+        <!-- then we can define toggleAddTask() in our header -->
+    <app-button text="Add" color="green" (btnClick)="toggleAddTask()"></app-button>
+    
+</header>

@@ -1,0 +1,10 @@
+/* specific styles for my header */
+
+header {
+    /* bc we are going to have a button! and I want that to go on the side */
+    display: flex;
+    /* Push the button over to the right */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+<!-- We want to have a button called add which toggles the add form -->
+<!-- We want the button to be a seperate component in case we want
+to use that button somewhere else  -->
+
+<!-- If you want to use inline styleing: you can use a directive called
+    ngStyles, directives are usually going to be the curly braces {}
+    Use the ngstyle directive -->
+
+<!-- To add an event: add parenthesis and whatever the event is inside
+    (click) set to a method onClick -->
+<button class="btn" 
+        [ngStyle]="{'background-color': color}"
+        (click)="onClick()">{{ text }}</button>
